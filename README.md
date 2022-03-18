@@ -1,2 +1,3 @@
-# Practice
- howtogit
+# Practice #Learning git
+ **howtogit**
+ *getting gitty
