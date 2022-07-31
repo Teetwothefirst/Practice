@@ -1,0 +1,12 @@
+body{
+    background-color: lightblue;
+    
+}
+.head{
+    background-color: white;
+    display: flex;
+    
+}
+.links a{
+    text-decoration: none;
+}
