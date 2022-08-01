@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
 body{
     background-color: lightblue;   
 }
@@ -5,7 +9,34 @@ body{
     background-color: white;
     display: flex;
     justify-content: space-around;
+    
 }
 .links a{
     text-decoration: none;
+}
+.notify-img{
+    
+    background-color:none;
+    margin-left: -250px;
+}
+.links{
+    background-color: red;
+    padding: 5px 20px;
+
+}
+.links a{
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.body{
+    padding: 20px;
+}
+.body-border-content{
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
 }
