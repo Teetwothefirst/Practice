@@ -38,5 +38,11 @@ table, th, td {
     
   }
   .basic-details-upper{
-    display: flex;
+    border: 1px solid orange;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-left: 10px;
+  }
+  .basic-detail-body{
+    border: 2px solid orange;
   }
