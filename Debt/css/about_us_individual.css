@@ -16,6 +16,9 @@ body{
 h3{
     color: red;
 }
+h1{
+  color:rgba(10, 90, 205, 0.9)
+}
 table, th, td {
     border: 1px solid white;
     border-collapse: collapse;
@@ -30,22 +33,30 @@ table, th, td {
   .basic-details{
     margin: 0 30px ;
     padding: 0 10px;
-    border: 2px solid black;
-    background-color: #96D4D4;
+    
+    background-color: white;
     display: grid;
     grid-template-columns: auto;
   }
   .basic-details-upper{
     border: 1px solid orange;
+    border-radius: 15px;
+    background-color: #96D4D4;
     margin-top: 5px;
-    padding-top: 2px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
     padding-left: 10px;
+    padding-bottom: 7px;
     display: grid;
     grid-template-columns: 100px auto;
     column-gap: 25px; 
   }
   .basic-detail-body{
     border: 2px solid orange;
+    background-color: #96D4D4;
+    border-radius: 15px
   }
   .basic-detail-basic-details{
     /* grid-column-start: 2
@@ -63,4 +74,42 @@ table, th, td {
     /* display: flex;  */
     /* grid-template-columns: auto auto auto; */
 
+  }
+  .basic-detail-body{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+
+  }
+  .basic-detail-body-first{
+    border: 1px solid brown;
+    width: 72%;
+    margin: 10px;
+    padding: 5px;
+  }
+  .basic-detail-body-second{
+    border: 1px solid brown;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .basic-detail-body-button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 50px 10px 0 0;
+    
+  }
+  .basic-detail-body-button .delete{
+    margin-right: 20px;
+    background-color: rgb(243, 68, 68);
+    border: 2px solid rgb(243, 68, 68);
+    border-radius: 4px;
+  }
+  .basic-detail-body-button .edit{
+    margin-right: 5px;
+    background-color: rgb(34, 137, 255);
+    border: 2px solid rgb(34, 137, 255);
+    border-radius: 4px;
   }
