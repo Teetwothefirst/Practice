@@ -54,8 +54,7 @@ table, th, td {
     column-gap: 25px; 
   }
   .basic-detail-body{
-    border: 2px solid orange;
-    background-color: #96D4D4;
+    
     border-radius: 15px
   }
   .basic-detail-basic-details{
@@ -63,7 +62,7 @@ table, th, td {
     grid-column-end: */
   }
   .basic-details-head-body strong{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 5px;
     padding : 3px;
     display: flex;
@@ -83,16 +82,27 @@ table, th, td {
   }
   .basic-detail-body-first{
     border: 1px solid brown;
+    background-color:#96D4D4 ;
+    border-radius: 15px;
     width: 72%;
     margin: 10px;
     padding: 5px;
   }
   .basic-detail-body-second{
     border: 1px solid brown;
+    background-color:#96D4D4 ;
+    border-radius: 15px;
     margin-top: 10px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
+ .basic-detail-body-second h2{
+padding : 5px;
+ }
+ .basic-detail-body-second .table{
+  margin: 5px;
+  padding: 5px;
+ }
   .basic-detail-body-button{
     
     display: flex;

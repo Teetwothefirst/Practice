@@ -1,0 +1,17 @@
+body{
+    background: lightblue;
+}
+.head{
+    display: flex;
+    justify-content: space-evenly;
+}
+h3{
+    color: red;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #96D4D4;
+  }

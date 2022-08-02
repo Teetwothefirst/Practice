@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;   
+}
+.head{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 200px;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(159, 159, 159);
+    font-weight: 500;
+
+}
+.notify-img{
+    background-color:none;
+}
+.links{
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.links a{
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+    justify-content: space-evenly;
+}
+.body-border-content{
+    border: 2px solid rgba(101, 146, 220, 0.833);
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    column-gap: 10%;
+    grid-template-columns: 45% 45%;
+    width: 100%;
+    justify-content: space-evenly; 
+    background-color: lightblue;
+}
+.forms form{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.forms form label{
+    margin-top: 15px;
+}
+#name{
+    margin-top: 4px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    outline: 0;
+    border: 0;
+}
+.file .img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+.submit-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.submit-button button{
+    color: white;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(90, 90, 226);
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(53, 159, 230);
+}

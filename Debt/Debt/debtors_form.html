@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Debtor's Form</title>
+</head>
+<body>
+    <div class="head">
+        <div class="notify-img">
+            <img src="img/Frame 64.png" alt="NOTIFY">
+        </div>
+        <div class="links">
+            <a href="Home">Home</a>
+            <a href="Home">About Us</a>
+            <a href="Home">Contact Us</a>
+            <a href="Home">Services</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container">
+        <div class="debtor-h1">
+            <h1>Debtor's Form</h1>
+        </div>
+        <div class="body-border-content">    
+            <div class="forms">
+                <form action="get">
+                    <label for="pname">Name of Principal</label>
+                    <input type="text" name="pname" id="name"><br><br>
+                    <label for="pname">Name of Student</label>
+                    <input type="text" name="Name of Student" id="name"><br><br>
+                    <label for="pname">School</label>
+                    <input type="text" name="School" id="name"><br><br>
+                    <label for="pname">Number of Terms owing</label>
+                    <input type="text" name="terms" id="name"><br><br><br>
+                    <label for="pname">School's Email Address</label><br>
+                    <input type="text" name="School's Email address " id="name">
+        
+                </form>
+            </div>
+            <div class="file">    
+                <div class="img">
+                    <img src="img/Frame 33.png" alt="file-attachment" usemap="#workmap" id="open">
+                    <map name="workmap">
+                        <area shape="rect" coords="0,0 472,395" href="" alt="" onclick="openfile()">
+                    </map>
+                </div>
+                
+                <div class="submit-button">
+                    <button title="submit your info">Submit</button>
+                </div>
+            </div>
+        </div> 
+    </div>   
+    </div>
+    <script>
+        function openfile(){
+            document.getElementById('open').click();
+        }
+    </script>
+    <!-- <div class="footer">End of the line</div> -->
+</body>
+</html>
