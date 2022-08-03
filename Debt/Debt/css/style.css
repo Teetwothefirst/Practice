@@ -21,6 +21,9 @@ body{
     font-weight: 500;
 
 }
+.links a:hover{
+    border-bottom: 1px solid rgb(10,20,95);
+}
 .notify-img{
     background-color:none;
 }
