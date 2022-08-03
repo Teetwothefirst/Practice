@@ -23,10 +23,12 @@ body{
 }
 .links a:hover{
     border-bottom: 1px solid rgb(10,20,95);
+    color : lightblue;
 }
 .notify-img{
     background-color:none;
 }
+
 .links{
     padding: 5px 20px;
     display: flex;
@@ -99,11 +101,22 @@ input{
     margin-top: 20px;
 }
 .submit-button button{
-    color: white;
+    background-color: white;
+    color: black;
     width: 150px;
     height: 30px;
-    background-color: rgb(90, 90, 226);
+    /* background-color: rgb(90, 90, 226); */
     text-align: center;
-    border-radius: 10px;
-    border: 1px solid rgb(53, 159, 230);
+    border-radius: 12px;
+    /* border: none; */
+    border: 1px solid grey;
+    transition: all 0.15s;
+    
+}
+.submit-button button:hover{
+    background: rgba(10,10,150,0.9);
+    color : white;
+    cursor: pointer;
+    border: none;
+    content: '\00bb';
 }
