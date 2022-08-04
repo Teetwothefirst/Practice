@@ -33,6 +33,10 @@ h1{
   flex-direction: column;
   align-items: center;
 }
+.side-panel img{
+  
+  color: red;
+}
 #dashboard-menu{
   margin-left: 5px;
 }
@@ -41,15 +45,15 @@ margin-top: 25px;
 margin-left: 10px
 }
 table, th, td {
-    border: 1px solid grey;
-    border-collapse: collapse;
-  }
-  th, td {
-    background-color: white;
-  }
+border: 1px solid grey;
+border-collapse: collapse; 
+}
+th, td {
+  background-color: white;
+}
   .body-of-dashboard{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   }
   .basic-details{
     margin: 0 30px ;
@@ -60,12 +64,13 @@ table, th, td {
     grid-template-columns: auto;
   }
   .basic-details-upper{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     border-radius: 15px;
     background-color: white;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    margin-right: 10px;
+    margin-right: 21px;
+    margin-left: 11px;
     padding-right: 5px;
     padding-top: 5px;
     padding-left: 10px;
@@ -83,16 +88,18 @@ table, th, td {
     grid-column-end: */
   }
   .basic-details-head-body strong{
-    /* border: 1px solid black; */
     margin-top: 5px;
     padding : 3px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgb(38, 142, 240);
+
   }
   .basic-details-head-body strong span{
     /* display: flex;  */
     /* grid-template-columns: auto auto auto; */
+    background-color: rgb(38, 142, 240);
 
   }
   .basic-detail-body{
@@ -102,7 +109,7 @@ table, th, td {
 
   }
   .basic-detail-body-first{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     background-color:white ;
     border-radius: 15px;
     width: 72%;
@@ -110,7 +117,7 @@ table, th, td {
     padding: 5px;
   }
   .basic-detail-body-second{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     background-color:white ;
     border-radius: 15px;
     margin-top: 10px;
@@ -129,20 +136,24 @@ padding : 5px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 50px 10px 0 0;
+    margin: 40px 10px 0 0;
     
   }
   .basic-detail-body-button .delete{
     margin-right: 20px;
+    padding: 3px 6px;
     background-color: rgb(243, 68, 68);
     border: 2px solid rgb(243, 68, 68);
-    border-radius: 4px;
+    border-radius: 5px;
+    text-align: center;
   }
   .basic-detail-body-button .edit{
     margin-right: 5px;
     background-color: rgb(34, 137, 255);
     border: 2px solid rgb(34, 137, 255);
-    border-radius: 4px;
+    border-radius: 5px;
+    padding: 3px 6px;
+    text-align: center;
   }
 
   @keyframes shake {
@@ -157,8 +168,4 @@ padding : 5px;
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-  @keyframes rotate{
-    
-    transform: rotateY(180deg);
   }
