@@ -23,7 +23,10 @@ h3{
 h1{
   color:rgba(10, 90, 205, 0.9)
 }
-
+.notify-logo:hover{
+  animation: rotate;
+  animation-iteration-count: infinite;
+}
 .side-panel{
   margin-top: 12px;
   display: flex;
@@ -52,7 +55,7 @@ table, th, td {
     margin: 0 30px ;
     padding: 0 10px;
     
-    background-color: rgb(96, 140, 245);
+    background-color: rgb(218, 216, 216);
     display: grid;
     grid-template-columns: auto;
   }
@@ -154,4 +157,8 @@ padding : 5px;
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  @keyframes rotate{
+    
+    transform: rotateY(180deg);
   }
