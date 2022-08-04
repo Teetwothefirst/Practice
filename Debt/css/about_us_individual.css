@@ -24,16 +24,21 @@ h1{
   margin-top: 12px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+#dashboard-menu{
+  margin-left: 5px;
 }
 #other-menu-aside-dashboard{
 margin-top: 25px;
+margin-left: 10px
 }
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid grey;
     border-collapse: collapse;
   }
   th, td {
-    background-color: #96D4D4;
+    background-color: white;
   }
   .body-of-dashboard{
     display: flex;
@@ -43,14 +48,14 @@ table, th, td {
     margin: 0 30px ;
     padding: 0 10px;
     
-    background-color: white;
+    background-color: rgb(96, 140, 245);
     display: grid;
     grid-template-columns: auto;
   }
   .basic-details-upper{
     border: 1px solid orange;
     border-radius: 15px;
-    background-color: #96D4D4;
+    background-color: white;
     margin-top: 5px;
     margin-bottom: 15px;
     margin-right: 10px;
@@ -91,7 +96,7 @@ table, th, td {
   }
   .basic-detail-body-first{
     border: 1px solid brown;
-    background-color:#96D4D4 ;
+    background-color:white ;
     border-radius: 15px;
     width: 72%;
     margin: 10px;
@@ -99,7 +104,7 @@ table, th, td {
   }
   .basic-detail-body-second{
     border: 1px solid brown;
-    background-color:#96D4D4 ;
+    background-color:white ;
     border-radius: 15px;
     margin-top: 10px;
     margin-right: 10px;
@@ -128,7 +133,7 @@ padding : 5px;
   }
   .basic-detail-body-button .edit{
     margin-right: 5px;
-    background-color: rgb(34, 137, 255);
+    background-color: white;
     border: 2px solid rgb(34, 137, 255);
     border-radius: 4px;
   }
