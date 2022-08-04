@@ -19,6 +19,15 @@ h3{
 h1{
   color:rgba(10, 90, 205, 0.9)
 }
+
+.side-panel{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+#other-menu-aside-dashboard{
+margin-top: 25px;
+}
 table, th, td {
     border: 1px solid white;
     border-collapse: collapse;
