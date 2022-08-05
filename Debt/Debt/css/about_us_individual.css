@@ -33,10 +33,6 @@ h1{
   flex-direction: column;
   align-items: center;
 }
-.side-panel img{
-  
-  color: red;
-}
 #dashboard-menu{
   margin-left: 5px;
 }
