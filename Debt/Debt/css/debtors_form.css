@@ -19,13 +19,46 @@ body{
   animation-iteration-count: infinite;
 }
 .body-of-dashboard{
-    display: flex;
-    justify-content: space-between;
-    }
+    display: grid;
+    grid-template-columns: 170px auto;
+    margin-top: 25px;
+    
+}
 .side-panel{
-    margin-top: 15px;
+    
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: space-between;
     justify-content: center;
-  }
+}
+.side-panel img{
+    margin-top: 7px;
+    padding: 3px;
+}
+.basic-details{
+    background-color: rgb(173, 172, 172);
+    color: rgb(31, 126, 250);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0 5px;
+    padding: 10px;
+    
+}
+.forms{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.basic-detail-body-button{
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.basic-detail-body-button button{
+background-color: rgb(29, 119, 253);
+border: none;
+}
+
