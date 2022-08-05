@@ -39,7 +39,7 @@ body{
 }
 .basic-details{
     background-color: rgb(173, 172, 172);
-    color: rgb(31, 126, 250);
+    color: black;
     display: flex;
     flex-direction: column;
     margin: 20px 20px 0 5px;
@@ -55,10 +55,20 @@ body{
     margin: 5px;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
     
 }
-.basic-detail-body-button button{
+.basic-detail-body-button .next{
 background-color: rgb(29, 119, 253);
+align-self: flex-end;
 border: none;
+cursor: pointer;
 }
 
+/* input{
+    width: 100%;
+    height: 50px;
+    outline: 0;
+    border: 0;
+} */
