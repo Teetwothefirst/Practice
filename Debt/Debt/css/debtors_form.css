@@ -5,6 +5,7 @@
 body{
     background: white;
 }
+
 .head{
     display: flex;
     justify-content: space-between;
@@ -17,9 +18,14 @@ body{
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
+.body-of-dashboard{
+    display: flex;
+    justify-content: space-between;
+    }
 .side-panel{
-    margin-top: 12px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }

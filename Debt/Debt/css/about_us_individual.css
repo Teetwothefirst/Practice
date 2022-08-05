@@ -47,7 +47,7 @@ border-collapse: collapse;
 th, td {
   background-color: white;
 }
-  .body-of-dashboard{
+.body-of-dashboard{
   display: flex;
   justify-content: space-between;
   }
