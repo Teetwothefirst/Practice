@@ -89,13 +89,13 @@ th, td {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(38, 142, 240);
+    /* background-color: rgb(38, 142, 240); */
 
   }
   .basic-details-head-body strong span{
     /* display: flex;  */
     /* grid-template-columns: auto auto auto; */
-    background-color: rgb(38, 142, 240);
+    /* background-color: rgb(38, 142, 240); */
 
   }
   .basic-detail-body{
