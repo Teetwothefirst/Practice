@@ -1,0 +1,11 @@
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.chat-body-textarea{
+    background: rgba(51, 8, 8, 0.3);
+}
+form input{
+    /**/
+    border-radius: 3%;
+}
