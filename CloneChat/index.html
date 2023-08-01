@@ -10,26 +10,24 @@
 </head>
 <body class="bg-secondary">
     <header>
-        <div class="row mb-2">
+        <div class="row m-2">
             <div class="col-4 col-lg-4">
-                <h2>Asher</h2>
+                <h2>Asher Chat  <i class="bi bi-app-indicator"></i></h2>
             </div>
-            <div class="col-7 col-lg-7 logo">
-                <img src="apple-touch-icon.png" class="img-fluid" alt="Img-Asher">
-            </div>
-            
+                        
         </div>
     </header>
     <!-- Embodiement of the chat system -->
     <main>
         <!-- Each of this div should  be for the outer image / outer look and they should be clickable -->
-        <div class="container bg-white border rounded">
+        <div class="container bg-white border rounded" id="Outer-chat-container">
             <div class="row border rounded">
-                <div class="col-12 col-lg-12 chat-container">
+                
+                <div class="col-10 col-lg-10 chat-container">
                     <div class="row">
                         <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center chat-image-container">
                             <!-- <img src="" alt=""> -->
-                            <a href="#" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProfile" data-controls="offcanvasProfile">
+                            <a href="#modalprofile" data-bs-toggle="modal" data-bs-target="#modalprofile">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
@@ -38,10 +36,11 @@
                         </div>
                         
                         <div class="col-8 col-lg-8 chat-text-container">
-                            <a href="#" class="text-dark text-decoration-none">
-                                <div class="row">
+                            <a href="" id="outer-link" role="button" class="text-dark text-decoration-none" onclick="outerChat()">
+                                <div class="row" id="outer-link-child">
                                     
                                     <div class=" col-12 col-lg-12 username">
+                                        
                                         <h6>Princess</h6>
                                     </div>
                                     <div class="col-12 col-lg-12 lastsenttext">
@@ -52,9 +51,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-2 col-lg-2 d-flex align-items-end">8:322pm</div>
             </div>
             <div class="row border rounded">
-                <div class="col-12 col-lg-12 chat-container">
+                
+                <div class="col-10 col-lg-10 chat-container">
                     <div class="row">
                         <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center chat-image-container">
                             
@@ -79,9 +80,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-2 col-lg-2 d-flex align-items-end">8:322pm</div>
             </div>
             <div class="row border rounded">
-                <div class="col-12 col-lg-12 chat-container">
+                <div class="col-10 col-lg-10 chat-container">
                     <div class="row">
                         <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center chat-image-container">
                             <!-- <img src="" alt=""> -->
@@ -106,61 +108,166 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-2 col-lg-2 d-flex align-items-end">8:322pm </div>
             </div>
         </div>
 
         <!-- inner chat  -->
-        <div class="container">
+        <div class="container mt-3" id="inner-chat-container">
             <!-- header -->
             <div class="row">
-                <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center chat-image-container">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
+                
+                <div class="col-3 col-lg-3 navigation-menu">
+                    <div class="row my-2">
+                        <div class="col-4 col-lg-4">
+                            <a href="" class="link-dark">
+                                <i class="bi bi-box-arrow-in-left fw-bold fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb-1 bg-white border rounded">
+                        <div class="col-4 col-lg-4 d-flex justify-content-center align-items-center chat-image-container">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="col-7 col-lg-7 chat-text-container">
+                            <a href="#" class="text-dark text-decoration-none">
+                                <div class="row">                                
+                                    <div class=" col-12 col-lg-12 username">
+                                        <h6>Princess</h6>
+                                    </div>
+                                    <div class="col-12 col-lg-12 lastsenttext">
+                                        Hello
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row bg-white border rounded">
+                        <div class="col-4 col-lg-4 d-flex justify-content-center align-items-center chat-image-container">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="col-7 col-lg-7 chat-text-container">
+                            <a href="#" class="text-dark text-decoration-none">
+                                <div class="row">
+                                    
+                                    <div class=" col-12 col-lg-12 username">
+                                        <h6>Princess</h6>
+                                    </div>
+                                    <div class="col-12 col-lg-12 lastsenttext">
+                                        Hello
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-9 inner-chat-content">
+                    <div class="row">
+                        <div class="col-2 col-lg-2 d-flex justify-content-center align-items-center bg-success chat-image-container">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="col-10 col-lg-10 chat-text-container bg-success d-flex align-items-center p-2">
+                            <a href="#" class="col-12 col-lg-12 text-dark text-decoration-none">
+                                <div class="row align-items-center justify-content-center">
+                                    
+                                    <div class="col-12 col-lg-12 username">
+                                        <h6>Princess</h6>
+                                    </div>
+    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Body -->
+                    <div class="row chat-body-textarea">
+                        <div class="col-12 col-lg-12 chat-textarea-child1">
+                            <div class="chat-box-message">
+                                <div class="chatusername">
+                                    <h5>Joy</h5>
+                                </div>
+                                <div class="chatmessage">
+                                   <span> Hi, how are you doing? </span>
+                                </div>
+                                <div class="chattime">
+                                   <span> 8:322pm </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12">
+                            <div class="row">
+                                <!-- //We'd have an input and a send button -->
+                                <div class="col-10 col-lg-10 mt-4">
+                                    <form action="" class="input-send">
+                                        <label for="text"></label>
+                                        <input type="text" class="border rounded col-12 col-lg-12" placeholder="Send Message">
+                                        <button type="submit" class="btn btn-primary btn-sm d-flex justify-content-between">Send<i class="bi bi-send-fill ms-1"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Footer -->
+                    <div class="row justify-content-center bg-primary align-items-end">
+                        <h5>@ Asher Corporation 2022</h5>
+                    </div>
                 </div>
                 
-                <div class="col-10 col-lg-10 chat-text-container bg-danger d-flex align-items-center p-2">
-                    <a href="#" class="col-12 col-lg-12 text-dark text-decoration-none">
-                        <div class="row align-items-center justify-content-center">
-                            
-                            <div class="col-12 col-lg-12 username">
-                                <h6>Princess</h6>
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Body -->
-            <div class="row chat-body-textarea">
-                <p>content</p>
-            </div>
-
-            <!-- Footer -->
-            <div class="row justify-content-center align-items-end">
-                <!-- //We'd have an input and a send button -->
-                <div class="col-8 col-lg-9">
-                    <form action="">
-                        <label for="text"></label>
-                        <input type="text" class="border rounded col-12 col-lg-12" placeholder="Send Message">
-                    </form>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-sm btn-primary">Send <i class="bi bi-send-fill"></i></button>
-                </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="connect.js"></script>
 
     <!-- //Offcanvas for the profile picture -->
-    <div class="modal">
-
+    <div class="modal fade" id="modalprofile" tabindex="-1" aria-labelledby="modalprofileLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalprofileLabel">Profile Picture</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        
     </div>
 </body>
 </html>
