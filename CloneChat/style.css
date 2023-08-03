@@ -27,7 +27,7 @@
     align-items: center;
 
 }
-form input{
+.text-input-chat form input{
     /**/
     border-radius: 3%;
     margin-right: 5px;
